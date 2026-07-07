@@ -1,0 +1,80 @@
+body {
+    background: #888;
+}
+
+.garage-container {
+    max-width: 1400px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    color: #970097;
+    padding: 20px;
+    justify-items: center;
+}
+
+.grid-garage {
+    width: 95%;
+    display: grid;
+    border: 5px solid #555;
+    border-radius: 15px;
+    padding: 30px;
+background-color: #777;
+    grid-template-columns: 300px 1fr 300px;
+    grid-template-rows: repeat(3, 220px);
+    gap: 20px;
+}
+
+.roadway{
+    background-color: black;
+    color: white;
+    border-left: 5px dashed white;
+    border-right: 5px dashed white;
+    font: bold 30px Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2 / 4;
+    grid-row: 1 / 4;
+}
+
+.parking-spot {
+    background: #b5b5b5;
+    border: 3px solid #555;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 6rem;
+}
+
+.spot-1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.spot-2 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.spot-3 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.spot-4 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.vip-limo {
+    background-color: gold;
+    grid-column: 3;
+    grid-row: 2 / span 2;
+}
+
+.roadway {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+}
