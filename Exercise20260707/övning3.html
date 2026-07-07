@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="övning3.css">
+
+    <title>SmartParking Live | Live-karta och lediga platser</title>
+
+    <meta name="description" content="Hitta lediga parkeringsplatser i realtid. Se vår digitala garagekarta med laddstationer och boka din plats direkt.">
+
+</head>
+<body>
+
+    <header id="header-section">
+        <h1 class="logo" aria-label="SmartParking Live">SmartParking Live</h1>
+        <nav role="navigation" class="menu-links">
+            <ul class="menu">
+                <li><a aria-label="Meny: Karta" href="#karta">Karta</a></li>
+                <li><a aria-label="Meny: Info" href="#info">Info</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content-area">
+        <div tabindex="0" class="garage-container">
+            <h2 aria-label="Live-vy: Garageplan A">Live-vy: Garageplan A</h2>
+            <p>Klicka på en ruta för att se detaljer.</p>
+            
+            <div class="floor-layout">
+                <button type="button" class="spot" aria-label="Parkering 1: Upptagen av fordon">🚗</button>
+                <button type="button" class="spot" aria-label="Parkering 2: Upptagen av fordon">🚗</button>
+                <button type="button" class="spot" aria-label="Parkering 3: Ledig plats"></button> 
+                <button type="button" class="spot" aria-label="Parkering 4: Upptagen av fordon">🚗</button>
+            </div>
+        </div>
+
+        <aside class="info-sidebar">
+            <h2 tabindex="0" aria-label="Priser och regler">Priser och Regler</h2>
+            <p role="article" tabindex="0" aria-label="Standardtaxa: 20kr/h. Orangea streckade linjer visar zongränsen.">Standardtaxa: 20kr/h. Orangea streckade linjer visar zongränsen.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>© 2026 SmartParking AB</p>
+    </footer>
+
+</body>
+</html>
