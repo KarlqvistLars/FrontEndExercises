@@ -1,4 +1,4 @@
-### RESULTATET av dagens övning
+### Övning i att använda bootstrap
 
 ### Kontrollpanel SmartPark - Stor skärm.
 ![HMI med hjälp av bootstrap](https://github.com/KarlqvistLars/FrontEndExercises/blob/main/Exercise20260708/SmartPark.jpg)
