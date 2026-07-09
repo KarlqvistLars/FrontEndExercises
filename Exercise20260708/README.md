@@ -1,12 +1,19 @@
 ### Övning i att använda bootstrap
 
 ### Kontrollpanel SmartPark - Stor skärm.
-![HMI med hjälp av bootstrap](https://github.com/KarlqvistLars/FrontEndExercises/blob/main/Exercise20260708/SmartPark.jpg)
+<p align="center">
+  <img src="https://github.com/KarlqvistLars/FrontEndExercises/blob/main/Exercise20260708/SmartPark.jpg" width="500">
+</p>
 
 ### Kontrollpanel SmartPark - Tablet.
-![HMI med hjälp av bootstrap](https://github.com/KarlqvistLars/FrontEndExercises/blob/main/Exercise20260708/SmartParkTablet.jpg)
+<p align="center">
+  <img src="https://github.com/KarlqvistLars/FrontEndExercises/blob/main/Exercise20260708/SmartParTablet.jpg" width="500">
+</p>
 
 ### Mobilvy.
-![HMI med hjälp av bootstrap](https://github.com/KarlqvistLars/FrontEndExercises/blob/main/Exercise20260708/SmartParkMobil.jpg)
+<p align="center">
+  <img src="https://github.com/KarlqvistLars/FrontEndExercises/blob/main/Exercise20260708/SmartParkMobil.jpg" width="500">
+</p>
+
 <br>
 ### [TILLBAKA](https://github.com/KarlqvistLars/FrontEndExercises/blob/main/README.md)
