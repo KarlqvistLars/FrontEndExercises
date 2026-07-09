@@ -1,4 +1,9 @@
-### Övning i att använda bootstrap
+# Övning i att använda bootstrap
+I denna övning har vi gjort en dashboard som visar en parkering där adminstratören kan få information om:<br>
+Intäkter, Beläggning och felanmälningar. <br>
+En lista på senaste aktiviteter och och aktuella felanmälningar.<br><br>
+Sidan är responsiv i 3st zoomlägen, viss knappfunktion finns men är ej kopplade till någon åtgärd.
+<br>
 
 ## Kontrollpanel SmartPark - Full size.
 <p align="center">
