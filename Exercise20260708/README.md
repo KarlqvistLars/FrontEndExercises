@@ -1,18 +1,18 @@
 ### Övning i att använda bootstrap
 
-## Kontrollpanel SmartPark - Stor skärm.
+## Kontrollpanel SmartPark - Full size.
 <p align="center">
   <img src="https://github.com/KarlqvistLars/FrontEndExercises/blob/main/Exercise20260708/SmartPark.jpg" width="1200">
 </p>
 <br>
 
-## Kontrollpanel SmartPark - Tablet.
+## Kontrollpanel SmartPark - Tablet size.
 <p align="center">
   <img src="https://github.com/KarlqvistLars/FrontEndExercises/blob/main/Exercise20260708/SmartParkTablet.jpg" width="600">
 </p>
 <br>
 
-## Mobilvy.
+## Kontrollpanel SmartPark - Mobilvy size.
 <p align="center">
   <img src="https://github.com/KarlqvistLars/FrontEndExercises/blob/main/Exercise20260708/SmartParkMobil.jpg" width="400">
 </p>
