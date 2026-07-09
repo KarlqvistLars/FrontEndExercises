@@ -5,35 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Parking Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+        <style>
+        .content-wrapper { 
+            margin-left: 0; 
+            margin-top: 120px; /* Liten marginal på mobil */
+        }
+        @media (min-width: 992px) {
+            .content-wrapper { 
+                margin-left: 16.666667%; 
+                margin-top: 50px; /* Större marginal på LG-skärmar och uppåt */
+            } 
+        }
+        @media (max-width: 575.98px) {
+            .btn-action {
+                width: 70px !important;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+        tbody .btn-action {
+            position: relative;
+            z-index: 9999 !important;
+        }
+        .text-blink {
+            animation: soft-blink 1.5s infinite;
+        }
+        @keyframes soft-blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.2; }
+            100% { opacity: 1; }
+        }
+        @media (min-width: 768px) {
+            .col-lg-2 { border-right: 2px solid #ccc !important; border-bottom: none !important; }
+        }
+    </style>
 </head>
-<body>
-<div class="container-fluid vh-100 p-0">
-    <div class="bg-dark text-light px-3 py-2 fixed-top">
-        <h1 class="h5">Smart Parking Admin</h1>
-    </div>
 
+<body>
+    
+    <div class="bg-dark text-light px-3 py-2 fixed-top">
+        <h1 tabindex="0" class="h5">Smart Parking Admin</h1>
+    </div>
+    
+    <div class="container-fluid vh-100 p-0">
     <!-- innehåll -->
 <div class="fixed-top" style="top: 48px; bottom: 0; left: 0; right: 0; overflow-y: auto;">
     <div class="d-flex flex-column flex-lg-row g-0 content-row h-100">
         
         <div class="col-12 col-lg-2" style="border-bottom: 2px solid #ccc; border-right: none;">
-            <style>
-                @media (min-width: 768px) {
-                    .col-lg-2 { border-right: 2px solid #ccc !important; border-bottom: none !important; }
-                }
-            </style>
-            <nav class="bg-light sidebar p-3 d-flex flex-row flex-lg-column gap-2" style="height: auto; min-height: 100%;">
-            <a class="btn btn-primary flex-fill flex-lg-grow-0 w-100">
-                <i class="bi bi-house d-sm-none fw-bold"></i>
+
+            <nav role="navigation" tabindex="0" class="bg-light sidebar p-3 d-flex flex-row flex-lg-column gap-2" style="height: auto; min-height: 100%;">
+            <a role="button" tabindex="0" class="btn btn-primary flex-fill flex-lg-grow-0 w-100">
+                <i aria-hidden="true" class="bi bi-house d-sm-none fw-bold"></i>
                 <span class="d-none d-sm-inline fw-bold">Översikt</span>
             </a>
-            <a class="btn btn-primary flex-fill flex-lg-grow-0 w-100">
-                <i class="bi bi-camera-video d-sm-none fw-bold"></i>
+            <a role="button" tabindex="0" class="btn btn-primary flex-fill flex-lg-grow-0 w-100">
+                <i aria-hidden="true" class="bi bi-camera-video d-sm-none fw-bold"></i>
                 <span class="d-none d-sm-inline fw-bold">Kameravyer</span>
             </a>
-            <a class="btn btn-primary flex-fill flex-lg-grow-0 w-100">
-                <i class="bi bi-currency-dollar d-sm-none fw-bold"></i>
+            <a role="button" tabindex="0" class="btn btn-primary flex-fill flex-lg-grow-0 w-100">
+                <i aria-hidden="true" class="bi bi-currency-dollar d-sm-none fw-bold"></i>
                 <span class="d-none d-sm-inline fw-bold">Prisinställningar</span>
             </a>
             </nav>
@@ -42,138 +74,162 @@
 </div>
 
 <div class="col-12 col-lg-10 end-0 content-wrapper">
-    <style>
-        .content-wrapper { 
-            margin-left: 0; 
-            margin-top: 120px; /* Liten marginal på mobil */
-        }
-        
-        @media (min-width: 992px) {
-            .content-wrapper { 
-                margin-left: 16.666667%; 
-                margin-top: 50px; /* Större marginal på LG-skärmar och uppåt */
-            } 
-        }
 
-        @media (max-width: 575.98px) {
-            .btn-action {
-                width: 70px !important;
-                padding-left: 0;
-                padding-right: 0;
-            }
-        }
-    </style>
 
     <main class="col content-area p-3 mt-5">
-        <h1 class="h5">Garageplan A - Status</h1>
+        <div tabindex="0" class="h5">Garageplan A - Status</div>
         <div class="row">
             <div class="col-12 col-lg-4">
-                <div class="card p-3 my-2 h-60 bg-light">
-                    <h5 class="h6">INTÄKTER IDAG</h5>
-                    <p class="h3">4 500 kr</p>
+                <div class="card border-0 border-start border-success border-5 p-3 my-2 h-60 bg-light " style="height: 100px;">
+                    <h5 tabindex="0" role="heading" aria-level="2" class="h6">INTÄKTER IDAG</h5>
+                    <p tabindex="0" role="text" class="h3">4 500 kr</p>
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-                <div class="card p-3 my-2 bg-light" style="height: 100px;">
-                    <h5 class="h6">AKTUELL BELÄGGNING</h5>
-                    <p class="h3">87 %</p>
+                <div class="card border-0 border-start border-primary border-5 p-3 my-2 bg-light" style="height: 100px;">
+                    <h5 tabindex="0" role="heading" aria-level="2" class="h6">AKTUELL BELÄGGNING</h5>
+                    <p tabindex="0" role="text" class="h3">87 %</p>
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-            <div class="card p-3 my-2 bg-light" style="height: 100px;">
-                <h5 class="h6">FELANMÄLDA PLATSER</h5>
+            <div class="card border-0 border-start border-danger border-5 p-3 my-2 bg-light" style="height: 100px;">
+                <h5 tabindex="0" role="heading" aria-level="2" class="h6">FELANMÄLDA PLATSER</h5>
                 <div class="d-flex align-items-center">
-                    <p class="h3 mb-0">3 st</p>
+                    <p tabindex="0" role="text" class="h3 mb-0">3 st</p>
                     <button class="btn btn-danger ms-auto btn-action fw-bold" style="width:150px;">
-                        <i class="bi bi-tools d-sm-none fw-bold"></i>
-                        <span class="d-none d-sm-inline fw-bold">Åtgärd krävs</span>
+                        <i aria-hidden="true" class="bi bi-tools d-sm-none fw-bold"></i>
+                        <span class="d-none d-sm-inline fw-bold text-blink">Åtgärd krävs</span>
                     </button>
                 </div>
             </div>
         </div>
-        <p class="pt-3 h5">Senaste aktivitet:</p>
+        <p tabindex="0" class="pt-3 h5">Senaste aktivitet:</p>
         <table class="table table-striped table-hover align-middle">
             <thead class="table-dark">
             <tr>
-                <th scope="col">Reg-nr</th>
-                <th scope="col">Tidpunkt</th>
-                <th scope="col">P-plats</th>
-                <th scope="col" class="text-end">Status</th>
+                <th tabindex="0" scope="col">Reg-nr</th>
+                <th tabindex="0" scope="col">Tidpunkt</th>
+                <th tabindex="0" scope="col">P-plats</th>
+                <th tabindex="0" scope="col" class="text-end">Status</th>
             </tr>
             </thead>
             
             <tbody>
             <tr>
-                <td><strong>ABC-123</strong></td>
-                <td>14:22</td>
-                <td>Plats 04</td>
+                <td tabindex="0"><strong>ABC-123</strong></td>
+                <td tabindex="0">14:22</td>
+                <td tabindex="0">Plats 04</td>
                 <td class="text-end"><button class="btn btn-sm btn-success fw-bold" style="width:100px;">Aktiv</button></td>
             </tr>
             <tr>
-                <td><strong>DEF-456</strong></td>
-                <td>14:30</td>
-                <td>Plats 07</td>
+                <td tabindex="0"><strong>DEF-456</strong></td>
+                <td tabindex="0">14:30</td>
+                <td tabindex="0">Plats 07</td>
                 <td class="text-end"><button class="btn btn-sm btn-success fw-bold" style="width:100px;">Aktiv</button></td>
             </tr>
             <tr>
-                <td><strong>GHI-789</strong></td>
-                <td>14:45</td>
-                <td>Plats 09</td>
+                <td tabindex="0"><strong>GHI-789</strong></td>
+                <td tabindex="0">14:45</td>
+                <td tabindex="0">Plats 09</td>
                 <td class="text-end"><button class="btn btn-sm btn-secondary fw-bold" style="width:100px;">Avslutad</button></td>
             </tr>
             <tr>
-                <td><strong>JKL-012</strong></td>
-                <td>10:57</td>
-                <td>Plats 12</td>
+                <td tabindex="0"><strong>JKL-012</strong></td>
+                <td tabindex="0">10:57</td>
+                <td tabindex="0">Plats 12</td>
                 <td class="text-end"><button class="btn btn-sm btn-success fw-bold" style="width:100px;">Aktiv</button></td>
             </tr>
             <tr>
-                <td><strong>FFR-345</strong></td>
-                <td>10:57</td>
-                <td>Plats 11</td>
+                <td tabindex="0"><strong>FFR-345</strong></td>
+                <td tabindex="0">10:57</td>
+                <td tabindex="0">Plats 11</td>
                 <td class="text-end"><button class="btn btn-sm btn-success fw-bold" style="width:100px;">Aktiv</button></td>
             </tr>
             </tbody>
         </table>
-        <p class="pt-3 h5">Aktuella felanmälningar</p>
+        <p tabindex="0" class="pt-3 h5">Aktuella felanmälningar</p>
             <div class="table-responsive">
                 <table class="table table-striped table-hover align-middle">
                 <thead class="table-dark">
                     <tr>
-                    <th scope="col">P-plats</th>
-                    <th scope="col">Orsak</th>
-                    <th scope="col" class="text-end">Status</th>
+                    <th tabindex="0" scope="col">P-plats</th>
+                    <th tabindex="0" scope="col">Orsak</th>
+                    <th tabindex="0" scope="col" class="text-end">Status</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                    <td class="text-danger fw-bold">Plats 14</td>
-                    <td>Laddstation trasig (Kortslutning)</td>
-                    <td class="text-end"><button class="btn btn-sm btn-danger btn-action fw-bold" style="width:180px;">    
-                        <i class="bi bi-tools d-sm-none fw-bold"></i>
-                        <span class="d-none d-sm-inline">Markera som åtgärdad</span>
-                    </button></td>
-                    </tr>
-                    <tr>
-                    <td class="text-danger fw-bold">Plats 05</td>
-                    <td>Trasig belysning</td>
-                    <td class="text-end"><button class="btn btn-sm btn-danger btn-action fw-bold" style="width:180px;">    
-                        <i class="bi bi-tools d-sm-none fw-bold"></i>
-                        <span class="d-none d-sm-inline">Markera som åtgärdad</span>
-                    </button></td>
-                    </tr>
-                    <tr>
-                    <td class="text-danger fw-bold">Plats 12</td>
-                    <td>Trasig belysning</td>
-                    <td class="text-end"><button class="btn btn-sm btn-danger btn-action fw-bold" style="width:180px;">    
-                        <i class="bi bi-tools d-sm-none fw-bold "></i>
-                        <span class="d-none d-sm-inline">Markera som åtgärdad</span>
-                    </button></td>
-                    </tr>
-                </tbody>
+            <tbody>
+                <tr>
+                    <td tabindex="0" class="text-danger fw-bold">Plats 14</td>
+                    <td tabindex="0">Laddstation trasig (Kortslutning)</td>
+                    <td class="text-end">
+                        <button class="btn btn-sm btn-danger btn-action fw-bold" style="width:150px;" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#atgardaModal" 
+                                data-bs-plats="Plats 14" 
+                                data-bs-fel="Laddstation trasig (Kortslutning)">    
+                            <i class="bi bi-tools d-sm-none fw-bold"></i>
+                            <span class="d-none d-sm-inline">Åtgärda</span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td tabindex="0" class="text-danger fw-bold">Plats 05</td>
+                    <td tabindex="0">Trasig belysning</td>
+                    <td class="text-end">
+                        <button class="btn btn-sm btn-danger btn-action fw-bold" style="width:150px;" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#atgardaModal" 
+                                data-bs-plats="Plats 05" 
+                                data-bs-fel="Trasig belysning)">    
+                            <i class="bi bi-tools d-sm-none fw-bold"></i>
+                            <span class="d-none d-sm-inline">Åtgärda</span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td tabindex="0" class="text-danger fw-bold">Plats 12</td>
+                    <td tabindex="0">Trasig belysning</td>
+                    <td class="text-end">
+                        <button class="btn btn-sm btn-danger btn-action fw-bold" style="width:150px;" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#atgardaModal" 
+                                data-bs-plats="Plats 12" 
+                                data-bs-fel="Trasig belysning">    
+                            <i class="bi bi-tools d-sm-none fw-bold"></i>
+                            <span class="d-none d-sm-inline">Åtgärda</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
             </table>
         </main>
     </div>
+
+<div class="modal fade" id="atgardaModal" tabindex="-1" aria-labelledby="atgardaModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="atgardaModalLabel">Hantera felanmälan</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Stäng"></button>
+      </div>
+      <div class="modal-body">
+        <p>Du håller på att åtgärda fel för: <strong id="modalPlatsText"></strong></p>
+        <p><strong>Felbeskrivning:</strong> <span id="modalFelText"></span></p>
+        
+        <div class="mb-3">
+          <label for="atgardaKommentar" class="form-label">Åtgärdsnotering</label>
+          <textarea class="form-control" id="atgardaKommentar" rows="3" placeholder="Skriv vad som har gjorts..."></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Avbryt</button>
+        <button type="button" class="btn btn-success" id="btnSparaAtgard">Spara och slutför</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 <footer class="text-center py-3 bg-black text-light">
     &copy; 2026 SmartParking AB - Internkontroll
