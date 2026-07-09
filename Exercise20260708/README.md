@@ -22,6 +22,7 @@ Sidan är responsiv i 3st zoomlägen, viss knappfunktion finns men är ej koppla
   <img src="https://github.com/KarlqvistLars/FrontEndExercises/blob/main/Exercise20260708/SmartParkMobil.jpg" width="400">
 </p>
 <br>
+
 ## Lighthouse Test resultat.
 <p align="center">
   <img src="https://github.com/KarlqvistLars/FrontEndExercises/blob/main/Exercise20260708/Lighthouse.jpg" width="400">
