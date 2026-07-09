@@ -7,7 +7,7 @@
 
 ### Kontrollpanel SmartPark - Tablet.
 <p align="center">
-  <img src="https://github.com/KarlqvistLars/FrontEndExercises/blob/main/Exercise20260708/SmartParTablet.jpg" width="600">
+  <img src="https://github.com/KarlqvistLars/FrontEndExercises/blob/main/Exercise20260708/SmartParkTablet.jpg" width="600">
 </p>
 
 ### Mobilvy.
