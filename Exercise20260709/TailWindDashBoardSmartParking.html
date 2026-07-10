@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>SmartParking Dashboard</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+    tailwind.config = {
+        theme: {
+        extend: {
+        colors: { // Registrera egna kontrastgodkända färger
+        smartRed: '#991b1b', /* Motsv. Red-800 */
+        smartGreen: '#14532d', /* Motsv. green-900 */
+        smartAccent: '#4338ca' /* Egen färg (indigo-700) */
+                }
+                }
+            }
+        }
+    </script>
+ </head>
+
+<body>
+    
+    <div >
+        <h1 tabindex="0" class="h5">Smart Parking Admin</h1>
+    </div>
+    
+    <div >
+    <!-- innehåll -->
+<div >
+    <div >
+        
+        <div >
+
+            <nav >
+            <a >
+                <span >Översikt</span>
+            </a>
+            <a >
+                <span >Kameravyer</span>
+            </a>
+            <a >
+                <span >Prisinställningar</span>
+            </a>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div >
+
+
+    <main >
+        <div >Garageplan A - Status</div>
+        <div >
+            <div >
+                <div >
+                    <h5 >INTÄKTER IDAG</h5>
+                    <p >4 500 kr</p>
+                </div>
+            </div>
+            <div >
+                <div >
+                    <h5 >AKTUELL BELÄGGNING</h5>
+                    <p >87 %</p>
+                </div>
+            </div>
+            <div >
+            <div >
+                <h5 >FELANMÄLDA PLATSER</h5>
+                <div >
+                    <p >3 st</p>
+                    <button >
+                        <span >Åtgärd krävs</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <p >Senaste aktivitet:</p>
+        <table >
+            <thead >
+            <tr>
+                <th >Reg-nr</th>
+                <th >Tidpunkt</th>
+                <th >P-plats</th>
+                <th >Status</th>
+            </tr>
+            </thead>
+            
+            <tbody>
+            <tr>
+                <td ><strong>ABC-123</strong></td>
+                <td >14:22</td>
+                <td >Plats 04</td>
+                <td ><button >Aktiv</button></td>
+            </tr>
+            <tr>
+                <td ><strong>DEF-456</strong></td>
+                <td >14:30</td>
+                <td >Plats 07</td>
+                <td ><button >Aktiv</button></td>
+            </tr>
+            <tr>
+                <td ><strong>GHI-789</strong></td>
+                <td >14:45</td>
+                <td >Plats 09</td>
+                <td ><button >Avslutad</button></td>
+            </tr>
+            <tr>
+                <td ><strong>JKL-012</strong></td>
+                <td >10:57</td>
+                <td >Plats 12</td>
+                <td ><button >Aktiv</button></td>
+            </tr>
+            <tr>
+                <td ><strong>FFR-345</strong></td>
+                <td >10:57</td>
+                <td >Plats 11</td>
+                <td ><button >Aktiv</button></td>
+            </tr>
+            </tbody>
+        </table>
+        <p>Aktuella felanmälningar</p>
+            <div >
+                <table >
+                <thead >
+                    <tr>
+                    <th     >P-plats</th>
+                    <th     >Orsak</th>
+                    <th     >Status</th>
+                    </tr>
+                </thead>
+            <tbody>
+                <tr>
+                    <td >Plats 14</td>
+                    <td >Laddstation trasig (Kortslutning)</td>
+                    <td >
+                        <button ></button><span >Åtgärda</span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td >Plats 05</td>
+                    <td >Trasig belysning</td>
+                    <td >
+                            <button >    
+                            <span >Åtgärda</span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td >Plats 12</td>
+                    <td >Trasig belysning</td>
+                    <td >
+                        <button ><span >Åtgärda</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+        </main>
+    </div>
+
+<div >
+  <div >
+    <div >
+      <div >
+        <h5 >Hantera felanmälan</h5>
+        <button ></button>
+      </div>
+      <div >
+        <p>Du håller på att åtgärda fel för: <strong ></strong></p>
+        <p><strong>Felbeskrivning:</strong> <span ></span></p>
+        
+        <div >
+          <label >Åtgärdsnotering</label>
+          <textarea ></textarea>
+        </div>
+      </div>
+      <div >
+        <button >Avbryt</button>
+        <button >Spara och slutför</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<footer >
+    &copy; 2026 SmartParking AB - Internkontroll
+</footer>
+</html>
