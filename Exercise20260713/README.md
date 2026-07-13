@@ -6,7 +6,7 @@ beräkna och visa datan i webbläsaren.
 
 ## Resultatet visuellt.
 <p align="center">
-  <img src="https://github.com/KarlqvistLars/FrontEndExercises/blob/main/Exercise20260713/ExerciseBild.jp" width="1200">
+  <img src="https://github.com/KarlqvistLars/FrontEndExercises/blob/main/Exercise20260713/ExerciseBild.jpg" width="1200">
 </p>
 <br>
 
