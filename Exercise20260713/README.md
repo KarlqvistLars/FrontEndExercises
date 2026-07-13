@@ -1,5 +1,5 @@
 # Övning6 - Kundvagnen (Shopping Cart) - grundläggande JavaScript
-I den här uppgiften hjälper vi en e-handel att hantera produkter i en kundvagn.vbr>
+I den här uppgiften hjälper vi en e-handel att hantera produkter i en kundvagn.<br>
 Vi utgår från en färdig lista (array) med produkter och bygga logik för att filtrera,
 beräkna och visa datan i webbläsaren.
 <br>
