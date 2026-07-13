@@ -120,7 +120,7 @@
         // ==========================================================================
         // 1. .filter() för Hårdvara:
         // Nivå 1: Grundläggande JS & Array-metoder
-        console.log("Produkter:", produkter);
+        console.log("Produkter:", produkter.map(p => ({ ...p, namn: p.namn.toUpperCase() })));
         const hardvara = produkter.filter(p => p.kategori === "Hårdvara");
         console.log("Hårdvara:", hardvara);
 
