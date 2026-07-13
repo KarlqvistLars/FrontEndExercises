@@ -44,19 +44,37 @@
         }
         #produkt-lista li {
             background-color: #fff;
-            padding: 12px 15px;
-            margin-bottom: 8px;
+            padding: 10px;
+            margin: 8px;
             border-radius: 4px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;  /* Valfri linje mellan produkterna */
+        }
+        .produkt-namn {
+            padding-left: 15px;
+            margin-right: auto;
+        }
+
+        .produkt-pris {
+            padding-right: 15px;
+        }
+        
+        .pris-och-knapp {
+            display: flex;
+            align-items: center;
+            gap: 15px;                      /* Bestämmer exakt hur nära priset ska sitta knappen (15 pixlar här) */
         }
         .btn-ta-bort {
             background-color: #e74c3c;
             color: white;
             border: none;
             padding: 6px 12px;
+            margin-left: 20px;
+            margin-right: 20px;
             border-radius: 4px;
             cursor: pointer;
         }
@@ -113,7 +131,7 @@
         knapp.addEventListener('click', () => {
             lista.innerHTML = ""; 
             produkter
-            .map(p => `<span>${p.namn}</span><span>${p.pris} kr</span><button class="btn-ta-bort" id="ta-bort-${p.id}">Ta bort</button>`)
+            .map(p => `<span class="produkt-namn">${p.namn}</span><span class="produkt-pris">${p.pris} kr</span><button class="btn-ta-bort" id="ta-bort-${p.id}">Ta bort</button>`)
             .forEach(htmlInnehall => lista.innerHTML += `<li>${htmlInnehall}</li>`);
         });
         
