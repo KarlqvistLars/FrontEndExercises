@@ -2,7 +2,6 @@
 I den här uppgiften hjälper vi en e-handel att hantera produkter i en kundvagn.vbr>
 Vi utgår från en färdig lista (array) med produkter och bygga logik för att filtrera,
 beräkna och visa datan i webbläsaren.
-
 <br>
 
 ## Resultatet visuellt.
