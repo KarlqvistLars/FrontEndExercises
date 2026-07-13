@@ -120,11 +120,11 @@
         // ==========================================================================
         // 1. .filter() för Hårdvara:
         // Nivå 1: Grundläggande JS & Array-metoder
+        // 2. .map() för VERSALER:
         console.log("Produkter:", produkter.map(p => ({ ...p, namn: p.namn.toUpperCase() })));
         const hardvara = produkter.filter(p => p.kategori === "Hårdvara");
-        console.log("Hårdvara:", hardvara);
+        console.log("Hårdvara:", hardvara.map(p => ({ ...p, namn: p.namn.toUpperCase() })));
 
-        // 2. .map() för VERSALER:
         // Nivå 2: DOM-manipulation & Händelser
         const knapp = document.querySelector('#btn-visa');
         const lista = document.querySelector('#produkt-lista');
