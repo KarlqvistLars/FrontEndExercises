@@ -1,28 +1,14 @@
-# Övning i att använda bootstrap
-I denna övning har vi gjort en dashboard som visar en parkering där adminstratören kan få information om:<br>
-Intäkter, Beläggning och felanmälningar. <br>
-En lista på senaste aktiviteter och och aktuella felanmälningar.<br><br>
-Sidan är responsiv i 3st zoomlägen, viss knappfunktion finns men är ej kopplade till någon åtgärd.
+# Övning6 - Kundvagnen (Shopping Cart) - grundläggande JavaScript
+I den här uppgiften hjälper vi en e-handel att hantera produkter i en kundvagn.vbr>
+Vi utgår från en färdig lista (array) med produkter och bygga logik för att filtrera,
+beräkna och visa datan i webbläsaren.
+
 <br>
 
-
-## Kontrollpanel SmartPark - Full size.
+## Resultatet visuellt.
 <p align="center">
-  <img src="https://github.com/KarlqvistLars/FrontEndExercises/blob/main/Exercise20260708/SmartPark.jpg" width="1200">
+  <img src="https://github.com/KarlqvistLars/FrontEndExercises/blob/main/Exercise20260713/ExerciseBild.jpg" width="1200">
 </p>
-<br>
-
-## Kontrollpanel SmartPark - Tablet size.
-<p align="center">
-  <img src="https://github.com/KarlqvistLars/FrontEndExercises/blob/main/Exercise20260708/SmartParkTablet.jpg" width="600">
-</p>
-<br>
-
-## Kontrollpanel SmartPark - Mobilvy size.
-<p align="center">
-  <img src="https://github.com/KarlqvistLars/FrontEndExercises/blob/main/Exercise20260708/SmartParkMobil.jpg" width="400">
-</p>
-<br>
 <br>
 
 ### [TILLBAKA](https://github.com/KarlqvistLars/FrontEndExercises/blob/main/README.md)
