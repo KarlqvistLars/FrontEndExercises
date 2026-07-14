@@ -3,7 +3,7 @@ I denna övning har vi gjort en dashboard som visar en parkering där adminstrat
 Intäkter, Beläggning och felanmälningar. <br>
 En lista på senaste aktiviteter och och aktuella felanmälningar.<br><br>
 Sidan är responsiv i 3st zoomlägen, viss knappfunktion finns men är ej kopplade till någon åtgärd.
-#### Prova [här](https://front-end-exercises-eta.vercel.app/TailWindSmartGarage.html)
+#### [Prova sidanr responsivitet här.](https://front-end-exercises-eta.vercel.app/TailWindSmartGarage.html)
 <br>
 
 
